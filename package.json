@@ -6,6 +6,10 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/linsamasama/react-ts-template.git"
+  },
   "scripts": {
     "lint": "npm run lint-eslint && npm run lint-stylelint",
     "lint-eslint": "eslint -c .eslintrc.js --ext .ts,.tsx,.js src",
@@ -20,6 +24,17 @@
     "hooks": {
       "pre-commit": "lint-staged",
       "commit-msg": "env FORCE_COLOR=1 node scripts/verifyCommit.js"
+    }
+  },
+  "changelog": {
+    "bugsUrl": "https://github.com/linsamasama/react-ts-template/issues",
+    "emojis": true,
+    "authorName": true,
+    "authorEmail": true
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
     }
   },
   "lint-staged": {
@@ -56,11 +71,13 @@
     "babel-loader": "^8.1.0",
     "chalk": "^4.1.0",
     "clean-webpack-plugin": "^3.0.0",
+    "commitizen": "^4.1.2",
     "conventional-changelog-cli": "^2.1.0",
     "conventional-changelog-custom-config": "^0.3.1",
     "copy-webpack-plugin": "^6.0.3",
     "cross-env": "^7.0.2",
     "css-loader": "^4.2.1",
+    "cz-conventional-changelog": "^3.2.0",
     "enquirer": "^2.3.6",
     "eslint": "^7.7.0",
     "eslint-config-airbnb": "^18.2.0",
